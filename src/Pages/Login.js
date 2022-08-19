@@ -20,9 +20,10 @@ const Login = () => {
         const email = event.target.email.value;
         const password = event.target.password.value;
         signInWithEmailAndPassword(email, password)
-        navigate('/home')
     }
-
+    if (loading) {
+        return <button class="btn loading">loading</button>
+    }
     return (
         <div>
             <h1 className='text-primary text-2xl font-bold text-center my-5'>Login</h1>

@@ -1,12 +1,16 @@
 import React from 'react';
+import { useAuthState } from 'react-firebase-hooks/auth';
 import { Link } from "react-router-dom";
+import auth from '../firebase.init';
 import './Home.css';
 import Services from './Services';
 
 
 const Home = () => {
+
     return (
         <div>
+
             {/* banner */}
             <div className='banner flex'>
                 <div className="md:w-5/12 bannerText mt-8">

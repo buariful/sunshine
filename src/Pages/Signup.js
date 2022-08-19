@@ -8,7 +8,7 @@ const Signup = () => {
 
     const navigate = useNavigate();
     const [
-        createUserWithEmailAndPassword,
+        createUserWithEmailAndPassword, loading
 
 
     ] = useCreateUserWithEmailAndPassword(auth);
@@ -28,7 +28,9 @@ const Signup = () => {
         navigate('/home')
 
     }
-
+    if (loading) {
+        return <button class="btn loading">loading</button>
+    }
     return (
         <div>
             <h1 className='text-primary text-2xl font-bold text-center my-5'>Sign Up</h1>

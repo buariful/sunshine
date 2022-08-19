@@ -6,6 +6,8 @@ import NotFound from './Pages/NotFound';
 import Login from './Pages/Login';
 import Navbar from './Pages/Navbar';
 import Signup from './Pages/Signup';
+import RequireAuth from './Pages/RequireAuth';
+import Services from './Pages/Services';
 
 
 
@@ -17,9 +19,15 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/service" element={
+          <RequireAuth>
+            <Services />
+          </RequireAuth>
+        } />
         <Route path="/signup" element={<Signup />} />
         <Route path="/*" element={<NotFound />} />
       </Routes>
+
     </div>
   );
 }
