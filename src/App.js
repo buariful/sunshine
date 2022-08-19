@@ -5,9 +5,9 @@ import Home from './Pages/Home';
 import NotFound from './Pages/NotFound';
 import Login from './Pages/Login';
 import Navbar from './Pages/Navbar';
+import Signup from './Pages/Signup';
 
-// database username sunshine and password on the below
-// Ca2PnflFksuwZ5eR 
+
 
 function App() {
   return (
@@ -17,6 +17,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<Signup />} />
         <Route path="/*" element={<NotFound />} />
       </Routes>
     </div>

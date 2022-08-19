@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 import './Home.css';
+import Services from './Services';
 
 
 const Home = () => {
@@ -15,6 +16,65 @@ const Home = () => {
                 </div>
             </div>
 
+            {/* Services */}
+            <Services></Services>
+
+            {/* summary */}
+            <h1 className='text-primary font-bold text-4xl my-5'>Our Summary</h1>
+            <div className='w-10/12 mx-auto grid grid-cols-1 md:grid-cols-3 gap-5 mt-12 mb-8'>
+                <div className="card bg-[#e5e5e5] shadow-xl">
+                    <div className="card-body mx-auto">
+                        <h2 className="card-title text-5xl font-bold justify-center">250+</h2>
+                        <p className='text-neutral font-semibold text-xl'>Total Sell</p>
+
+                    </div>
+                </div>
+                <div className="card bg-[#e5e5e5] shadow-xl">
+                    <div className="card-body mx-auto">
+                        <h2 className="card-title text-5xl font-bold justify-center">150+</h2>
+                        <p className='text-neutral font-semibold text-xl'>Happy Customers</p>
+
+                    </div>
+                </div>
+                <div className="card bg-[#e5e5e5] shadow-xl">
+                    <div className="card-body mx-auto">
+                        <h2 className="card-title text-5xl font-bold justify-center">500+</h2>
+                        <p className='text-neutral font-semibold text-xl'>Pending Orders</p>
+
+                    </div>
+                </div>
+            </div>
+
+            {/* reviews */}
+            <h1 className='font-bold text-4xl my-10 text-primary'>What our Client says</h1>
+            <div className='grid md:grid-cols-3 grid-1'>
+                <div className='bg-base-200 shadow-xl rounded-lg m-5 flex p-5'>
+                    <div className='basis-1/3'>
+                        <h2 className='font-semibold'>MD Abdur Rahman</h2>
+                    </div>
+                    <div className='basis-2/3 text-right'>
+                        <small>The product is good and is easy to use. I'm using it in commercial purpose, really it provide amazing result in according to my expectation. Overall a best product. One could blindly buy it and would never regret.</small>
+                    </div>
+                </div>
+
+                <div className='bg-base-200 shadow-xl rounded-lg m-5 flex p-5'>
+                    <div className='basis-1/3'>
+                        <h2 className='font-semibold'>MD Julkarnain</h2>
+                    </div>
+                    <div className='basis-2/3 text-right'>
+                        <small>The product is good and is easy to use. I'm using it in commercial purpose, really it provide amazing result in according to my expectation. Overall a best product. One could blindly buy it and would never regret.</small>
+                    </div>
+                </div>
+
+                <div className='bg-base-200 shadow-xl rounded-lg m-5 flex p-5'>
+                    <div className='basis-1/3'>
+                        <h2 className='font-semibold'>MD Akkas Ali</h2>
+                    </div>
+                    <div className='basis-2/3 text-right'>
+                        <small>The product is good and is easy to use. I'm using it in commercial purpose, really it provide amazing result in according to my expectation. Overall a best product. One could blindly buy it and would never regret.</small>
+                    </div>
+                </div>
+            </div>
             {/* footer */}
             <footer class="footer p-10 bg-neutral text-neutral-content">
                 <div>
