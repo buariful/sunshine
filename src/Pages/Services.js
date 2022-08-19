@@ -16,7 +16,7 @@ const Services = () => {
             <h1 className='font-bold text-4xl my-10 text-primary'>Our Services</h1>
             <div className='w-11/12 grid md:grid-cols-4 grid-cols-1 mx-auto gap-8'>
 
-                {user ? products?.map(product => <SingleService product={product} key={product._id}></SingleService>) : <p className='text-2xl text-center text-red-600 font-bold'>Please login first</p>}
+                {user ? products?.map(product => <SingleService product={product} key={product._id}></SingleService>) : <p className='text-2xl text-center text-red-600 font-bold'>Please login first to watch services</p>}
             </div>
         </div>
     );
